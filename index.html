@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="keywords" content="project management, qa, it, jointoit" />
+  <meta name="description" content="Project Requirements" />
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <title>PR&AC</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark sticky-top bg-dark p-10">
+    <a class="navbar-brand col-3 col-lg-2 mr-0" href="https://jointoit.com">Join.To.IT</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#Sidebar">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="Sidebar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item-title"><a href="#0" class="nav-link">Project Requirements </a></li>
+        <li class="nav-item"><a href="#1" class="nav-link">1. Набор документов для разработки проложения </a></li>
+         <ul>
+           <li class="nav-item-2"><a href="#12" class="nav-link">MindMap</a></li>
+           <li class="nav-item-2"><a href="#13" class="nav-link">Project Requirements</a></li>
+           <li class="nav-item-2"><a href="#14" class="nav-link">Прототип</a></li>
+         </ul>
+        <li class="nav-item"><a href="#2" class="nav-link">2. Project Profile Page</a></li>
+        
+        <li class="nav-item"><a href="#3" class="nav-link">3. Project Requirements</a></li>
+          <ul>
+           <li class="nav-item-2"><a href="#15" class="nav-link">3.1. Важность Проектных Требований</a></li>
+           <li class="nav-item-2"><a href="#16" class="nav-link">3.2. Последовательность сбора требований</a></li>
+           <li class="nav-item-2"><a href="#17" class="nav-link">3.3. Критерии качества проектных требований</a></li>
+           <li class="nav-item-2"><a href="#18" class="nav-link">3.4. Что входит в Проектные Требования?</a></li>
+            <ul>
+              <li class="nav-item-3"><a href="#19" class="nav-link">3.4.1 Название документа Project Requirements</a></li>
+              <li class="nav-item-3"><a href="#20" class="nav-link">3.4.2 Версионность проектных требований</a></li>
+              <li class="nav-item-3"><a href="#21" class="nav-link">3.4.3 General Project Information</a></li>
+              <li class="nav-item-3"><a href="#22" class="nav-link">3.4.4 General rules</a></li>
+              <li class="nav-item-3"><a href="#23" class="nav-link">3.4.5 Validation rules</a></li>
+              <li class="nav-item-3"><a href="#24" class="nav-link">3.4.6 Функциональные и нефункциональные требования каждого модуля</a></li>
+                <ul>
+                  <li class="nav-item-4"><a href="#36" class="nav-link">3.3.6   1. Общее</a></li>
+                  <li class="nav-item-4"><a href="#37" class="nav-link">3.4.6   2. Registration</a></li>
+                  <li class="nav-item-4"><a href="#38" class="nav-link">3.4.6   3. Login</a></li>
+                  <li class="nav-item-4"><a href="#39" class="nav-link">3.4.6   4. Модуль с таблицей и CRUD</a></li>
+                  <li class="nav-item-4"><a href="#40" class="nav-link">3.4.6   5. Удаление сущности</a></li>
+                  <li class="nav-item-4"><a href="#41" class="nav-link">3.4.6   6. Dashboard</a></li>
+                  <li class="nav-item-4"><a href="#42" class="nav-link">3.4.6   7. Общее</a></li>
+                </ul>
+            </ul>
+          </ul>
+
+        <li class="nav-item-title"><a href="#4" class="nav-link">Acceptance Criteria</a></li>
+        <li class="nav-item"><a href="#5" class="nav-link">1. AC - общая информация</a></li>
+        <li class="nav-item"><a href="#6" class="nav-link">2. Кто пишет АС?  На основании чего пишутся АС?</a></li>
+        <li class="nav-item"><a href="#7" class="nav-link">3. АС и Проектные Требования</a></li>
+        <li class="nav-item"><a href="#8" class="nav-link">4. Критерий готовности к написанию АС</a></li>
+        <li class="nav-item"><a href="#9" class="nav-link">5. Детализация АС</a></li>
+        <li class="nav-item"><a href="#10" class="nav-link">6. Как написать критерии приемки</a></li>
+        <li class="nav-item"><a href="#11" class="nav-link">7. Примеры АС для наиболее распространенных модулей приложений</a></li>
+         <ul>
+           <li class="nav-item-2"><a href="#26" class="nav-link">1a.Login (web, front-end)</a></li>
+           <li class="nav-item-2"><a href="#27" class="nav-link">1.b.Login (back-end)</a></li>
+           <li class="nav-item-2"><a href="#28" class="nav-link">2.a.Forgot & Reset Password (MOBILE, front-end)</a></li>
+           <li class="nav-item-2"><a href="#29" class="nav-link">2.b.Forgot & Reset Password (back-end)</a></li>
+           <li class="nav-item-2"><a href="#30" class="nav-link">3.a.Create module (web, front-end)</a></li>
+           <li class="nav-item-2"><a href="#31" class="nav-link">3.b.Create module (back-end)</a></li>
+           <li class="nav-item-2"><a href="#32" class="nav-link">4.a.Edit module (web, front-end)</a></li>
+           <li class="nav-item-2"><a href="#33" class="nav-link">4.b.Edit module (web, back-end)</a></li>
+           <li class="nav-item-2"><a href="#34" class="nav-link">5.a.Table with items (web, front-end)</a></li>
+           <li class="nav-item-2"><a href="#35" class="nav-link">5.b.Table with items (back-end)</a></li>
+          </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-lg-2 d-none d-lg-block bg-dark sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item-title"><a href="#0" class="nav-link">Project Requirements </a></li>
+            <li class="nav-item"><a href="#1" class="nav-link">1. Набор документов для разработки проложения </a></li>
+              <ul>
+                <li class="nav-item-2"><a href="#12" class="nav-link">MindMap</a></li>
+                <li class="nav-item-2"><a href="#13" class="nav-link">Project Requirements</a></li>
+                <li class="nav-item-2"><a href="#14" class="nav-link">Прототип</a></li>
+              </ul>
+            <li class="nav-item"><a href="#2" class="nav-link">2. Project Profile Page</a></li>
+           
+            <li class="nav-item"><a href="#3" class="nav-link">3. Project Requirements</a></li>
+              <ul>
+               <li class="nav-item-2"><a href="#15" class="nav-link">3.1. Важность Проектных Требований</a></li>
+               <li class="nav-item-2"><a href="#16" class="nav-link">3.2. Последовательность сбора требований</a></li>
+               <li class="nav-item-2"><a href="#17" class="nav-link">3.3. Критерии качества проектных требований</a></li>
+               <li class="nav-item-2"><a href="#18" class="nav-link">3.4. Что входит в Проектные Требования?</a></li>
+                <ul>
+                  <li class="nav-item-3"><a href="#19" class="nav-link">3.4.1 Название документа Project Requirements</a></li>
+                  <li class="nav-item-3"><a href="#20" class="nav-link">3.4.2 Версионность проектных требований</a></li>
+                  <li class="nav-item-3"><a href="#21" class="nav-link">3.4.3 General Project Information</a></li>
+                  <li class="nav-item-3"><a href="#22" class="nav-link">3.4.4 General rules</a></li>
+                  <li class="nav-item-3"><a href="#23" class="nav-link">3.4.5 Validation rules</a></li>
+                  <li class="nav-item-3"><a href="#24" class="nav-link">3.4.6 Функциональные и нефункциональные требования каждого модуля</a></li>
+                    <ul>
+                      <li class="nav-item-4"><a href="#36" class="nav-link">3.3.6   1. Общее</a></li>
+                      <li class="nav-item-4"><a href="#37" class="nav-link">3.4.6   2. Registration</a></li>
+                      <li class="nav-item-4"><a href="#38" class="nav-link">3.4.6   3. Login</a></li>
+                      <li class="nav-item-4"><a href="#39" class="nav-link">3.4.6   4. Модуль с таблицей и CRUD</a></li>
+                      <li class="nav-item-4"><a href="#40" class="nav-link">3.4.6   5. Удаление сущности</a></li>
+                      <li class="nav-item-4"><a href="#41" class="nav-link">3.4.6   6. Dashboard</a></li>
+                      <li class="nav-item-4"><a href="#42" class="nav-link">3.4.6   7. Общее</a></li>
+                    </ul>
+                </ul>
+              </ul>
+
+            <li class="nav-item-title"><a href="#4" class="nav-link">Acceptance Criteria</a></li>
+            <li class="nav-item"><a href="#5" class="nav-link">1. AC - общая информация</a></li>
+            <li class="nav-item"><a href="#6" class="nav-link">2. Кто пишет АС?  На основании чего пишутся АС?</a></li>
+            <li class="nav-item"><a href="#7" class="nav-link">3. АС и Проектные Требования</a></li>
+            <li class="nav-item"><a href="#8" class="nav-link">4. Критерий готовности к написанию АС</a></li>
+            <li class="nav-item"><a href="#9" class="nav-link">5. Детализация АС</a></li>
+            <li class="nav-item"><a href="#10" class="nav-link">6. Как написать критерии приемки</a></li>
+            <li class="nav-item"><a href="#11" class="nav-link">7. Примеры АС для наиболее распространенных модулей приложений</a></li>
+             <ul>
+               <li class="nav-item-2"><a href="#26" class="nav-link">1a.Login (web, front-end)</a></li>
+               <li class="nav-item-2"><a href="#27" class="nav-link">1.b.Login (back-end)</a></li>
+               <li class="nav-item-2"><a href="#28" class="nav-link">2.a.Forgot & Reset Password (MOBILE, front-end)</a></li>
+               <li class="nav-item-2"><a href="#29" class="nav-link">2.b.Forgot & Reset Password (back-end)</a></li>
+               <li class="nav-item-2"><a href="#30" class="nav-link">3.a.Create module (web, front-end)</a></li>
+               <li class="nav-item-2"><a href="#31" class="nav-link">3.b.Create module (back-end)</a></li>
+               <li class="nav-item-2"><a href="#32" class="nav-link">4.a.Edit module (web, front-end)</a></li>
+               <li class="nav-item-2"><a href="#33" class="nav-link">4.b.Edit module (web, back-end)</a></li>
+               <li class="nav-item-2"><a href="#34" class="nav-link">5.a.Table with items (web, front-end)</a></li>
+               <li class="nav-item-2"><a href="#35" class="nav-link">5.b.Table with items (back-end)</a></li>
+             </ul>
+        </div>
+      </nav>
+
+
+      <div class="offset-lg-3 col-lg-8">
+
+        <div>
+          <div class="card">
+            <div class="page-title">
+              <h1 class="title">Методичка для менеджеров компании Join.To.IT</h1>
+              <h5 class=title_2>Kyiv, June 2021</p>
+            </div>
+          </div>    
+        </div> 
+
+        <div>
+         <a class="anchor" id="0"></a>
+         <div class="card">
+           <h1 class="main-title">Project Requirements</h1>
+         </div>
+       </div>
+
+        <div>
+          <a class="anchor" id="1"></a>
+          <div class="card">
+            <div class="card-header">
+              1. Набор документов для разработки проложения
+            </div>
+            <div class="card-body">
+              
+              <p class="card-text"> Разработку веб приложения или сайта, подобно строительству здания, для того чтобы приступить непосредственно к разработке продукта, нужно определить и составить ряд важных документов к проекту:
+              </p>
+              
+              <ul>
+                  <li>Mindmap</li>
+                  <li>Project Requirements - Главный документ проектных требований</li>
+                  <li>Прототип</li>
+                  <li>Дизайн</li>
+              </ul>
+
+
+              <a class="anchor" id="12"></a>
+              <h5 class="text-block">Mindmap</h5>
+              <p class="card-text">
+              <p> MindMap - это диаграмма связей, представляющая собой древовидную схему на которой для каждой роли приложения отображены главые модули и подмодули приложения.</p>
+              <p> MindMap помогает:</p>
+              <ul>
+               <li> фиксировать даже большие объемы информации;</li>
+               <li> запоминать информацию (визуализация улучшает восприятие);</li>
+               <li> анализировать информацию – такое изображение помогает найти все взаимосвязи между деталями;</li>
+               <li> кроме того, MindMap позволяет увидеть и картину в целом, и ее мелкие детали.</li>
+              </ul>
+              <p> Эта карта необходима при составлении rough estimate проекта.</p>
+
+              <a class="anchor" id="13"></a>
+              <h5 class="text-block">Project Requirements</h5>
+              <p class="card-text">
+              <p> Проектные требования - это документ, в котором описаны все детали по работе приложения: цели, роли, функциональные и не функциональные требования. Это главный документ на проекте, который используется при разработке, по он всегда должен быть актуальным.</p>
+      
+              <a class="anchor" id="14"></a>
+              <h5 class="text-block">Прототип</h5>
+              <p class="card-text">
+              <p> Прототип - документ, что показывает схемы страниц проекта (wireframes), собранные в структуру и частично или полностью имитирующие работу интерактивных элементов и серверной части.</p>
+              <p> Зачем разрабатывать прототип:</p>
+              <ol>
+               <li class="li"> Прототип — средство быстрого согласования. Нет способа быстрее согласовать все детали проекта, чем сделать его эскизное визуальное представление.</li>
+               <li class="li"> Прототип экономит время: изменения, которые в инструменте прототипирования занимают секунды, в фотошопе, готовой верстке или на готовом сайте могут занимать часы, дни и недели.</li>
+               <li class="li"> При отсутствии прототипа — все подводные камни всплывают на производственных этапах или даже после старта проекта. Лучше найти проблему в проекте на этапе прототипа.</li>
+               <li class="li"> Прототип — это не дополнительный этап. Если прототипа нет, то вся работа по проектированию переходит на этап дизайна, а выполнять проектирование в Photoshop очень долго и дорого, а зачастую просто бесперспективно. Прототип не увеличивает объем работы, а уменьшает его.</li>
+               <li class="li">Прототип упрощает этап дизайна — когда есть схемы всех страниц, состав и расположение всех элементов, нарисовать макеты проще и дешевле. Это делает этап дизайна намного более предсказуемым.</li>
+               <li class="li">Прототип помогает заказчику формулировать свои требования — когда на его глазах быстро и понятно проект обретает форму, сразу становится очевидным, что требует корректировок и поправок. Исполнитель в свою очередь охотно вносит правки, ведь это просто.              </li>
+               <li class="li">В хорошем прототипе работают все ссылки, демонстрируется работа интерактивных элементов, частично имитируется работа серверной части, а значит, мы можем на нем отработать все сложные этапы взаимодействия с посетителем.              </li>
+               <li class="li">Прототип более понятно и емко читать, чем текстовое ТЗ, по этому прототип это важное дополнение к Project Requirement document.</li>
+              </ol>
+              
+              
+              <h5 class="text-block">Дизайн</h5>
+              <p class="card-text">
+              <p> Дизайн - это документ, где содержится визуализация всех страниц приложения с указанием стилей и размеров всем графическим элементам. По этому важно, если клиент предоставляет компании уже готовый дизайн, а не заказывает дизайн вашей команды, проверять этот дизайн на завершенность и соответствие требованиям.
+              </p>
+
+              <p class="card-text"> <b>Все перечисленные документы должны быть размещены на корпоративных ресурсах с соответственными доступами к ним. </b> Cейчас это размещение - корпоративный аккаунт на Google Drive папка ‘7. Project files -> current year -> relevant month -> folder for current project).
+              </p>
+
+            </div>
+          </div>
+        </div>
+ 
+
+
+
+         <div>
+            <a class="anchor" id="2"></a>
+            <div class="card">
+              <div class="card-header">
+                2. Project Profile page
+              </div>
+
+              <div class="card-body">
+              
+                <p class="card-text"> Кроме выше перечисленного, для каждого проекта, должен быть разработан документ Project Profile Page. В этом документе находятся:
+                </p>
+ 
+                <ul>
+                  <li>Kickoff Checklist</li>
+                  <li>Estimate (rought/actual)</li>
+                  <li>Project status tracker</li>
+                  <li>other</li>
+                </ul>
+
+                <p class="card-text"> Несколько основных правил:</p>
+                <ol>
+                  <li class="li"><b>Документ всегда нужно  держать в актуальном состоянии.</b></li>
+                  <li class="li">Пример документа - <a class="link_in_text" href="https://docs.google.com/spreadsheets/d/1MBruxBro2JMflVTc6fMslGvyE3vngO7kONl2_l4aKng/edit#gid=2100170729"target="_blank">https://docs.google.com/spreadsheets/d/1MBruxBro2JMflVTc6fMslGvyE3vngO7kONl2_l4aKng/edit#gid=2100170729.</a></li>
+                  <li class="li">Обратите внимание на название документа и оформление всех таблиц в нем.
+                  </li>
+                   <img src="img/ProfilePage.png" alt="profile-page" class="img-center">
+                  <li class="li">Этот документ должен быть готов до того как подключить команду (QA team, developer team) к разработке.                  </li>
+                  <li class="li">Этот документ должен быть “pinned” в rocket чате проекта: 
+                    <img src="img/Rocket.Chat.png" alt="pin-of-doc" class="img-center">
+                  <br> тут - формат для вставки ссылки в текст, как на рисунке: [text](link) 
+                  </li>
+                </ol>
+
+              </div>  
+            </div>
+          </div>
+
+
+
+          <div>
+            <a class="anchor" id="3"></a>
+            <div class="card">
+              <div class="card-header">
+                3. Project Requirements
+              </div>
+              
+              <a class="anchor" id="15"></a>
+              <div class="card-header_2">
+                3.1. Важность Проектных Требований
+              </div>
+              <div class="card-body">
+              
+                <p class="card-text"> <b>ЯСНЫЕ ТРЕБОВАНИЯ - ОСНОВА УСПЕХА</b></p>
+                <p>Любой опытный архитектор может подтвердить: затея строить дом, без проектной документации - обречена на провал, так и в разработке.</p>
+                
+                <p class="card-text"> <b>ОПТИМАЛЬНЫЕ СПОСОБЫ РЕАЛИЗАЦИИ</b></p>
+                <p>Видя всю картину (логику, связанные модули, цели) легко принять решения о самых оптимальных способах реализации; порой не стоит тратить много ресурса на тот или иной модуль, а лучше направить больше внимания и бюджета на другой, ведь он важнее для бизнеса и не приоритетный для пользователя.</p>
+                
+                <p class="card-text"> <b>ОЧЕРТАНИЕ НАПРАВЛЕНИЙ РАЗВИТИЯ ПРОЕКТА</b></p>
+                <p>Важно понимать, что со временем будет добавляться в проект, чтоб предусмотреть изменения в его архитектуре, это сэкономит время на переделки кода в будущем.</p>
+
+                <p class="card-text"> <b>УМЕНЬШЕНИЕ СТОИМОСТИ РАЗРАБОТКИ</b></p>
+                <p>Каждый специалист делает именно то, что требуется, не тратя время на эксперименты и правки.</p>
+
+                <p class="card-text"> <b>ЛУЧШИЕ ИДЕИ РОЖДАЮТСЯ В СПОРАХ</b></p>
+                <p>Совместная работа команды при тестировании требований и составление Aceptance Criteria позволяет улучшить оригинальную идею.</p>
+
+                <p class="card-text"> <b>НЕ НУЖНО ДЕРЖАТЬ ВСЁ В ГОЛОВЕ</b></p>
+                <p>Не нужно держать всю функциональность проекта в голове. Очень часто обсуждая что-либо устно или в переписках, решения забываются, а переписка теряется, по этому важно иметь актуальные требования в одном документе.</p>
+
+                <p class="card-text"> <b>ПРАВИЛЬНЫЕ ПРИОРИТЕТЫ</b></p>
+                <p>Фиксирование на бумаге всей функциональности проекта - путь к правильной архитектуре и последовательности разработки.</p>
+
+                <p class="card-text"> <b> ОЖИДАНИЯ ПОЛЬЗОВАТЕЛЕЙ </b></p>
+                <p>Техническая спецификация четко описывает, как функциональность приложения будет соответствовать ожиданиям пользователей и как они будут взаимодействовать с ним</p>
+
+                <p class="card-text"> <b> ФИКСИРОВАНИЕ ЗАТРАТ НА РАЗРАБОТКУ </b></p>
+                <p>Проектные требования дают возможность оценить время на разработку каждого модуля определяя итоговый результат приложения (ни больше ни меньше).</p>
+
+                <p class="card-text"> <b> СПОКОЙСТВИЕ И ГАРАНТИИ </b></p>
+                <p>Спецификация - это юридический документ, приложение к контракту, которая позволяет избегать каких-либо недопониманий между компанией и заказчиком.</p>
+              </div>
+              
+              <a class="anchor" id="16"></a>
+              <div class="card-header_2">
+                3.2. Последовательность сбора требований
+              </div>
+              
+              <div class="card-body">
+
+               <p> Поскольку в основном в нашей компании сбор требований и разработка проходят параллельно, при сборе требования, важно следовать правильной последовательности. Нужно начинать собирать требования с тех же модулей, с которых будет начитаться user flow и двигаться с учетом связей разных модулей.</p>
+               <p> <b> <u>Рассмотрим простой пример системы: </u> </b></p>
+               <p> Представим, что нам нужно разработать систему для ресторана. Описание бизнес-модели и рабочего процесса проекта:</p>
+               <ul>
+                 <li>Посетители должны иметь возможность быстро зарегистрироваться в системе в несколько кликов.</li>
+                 <li>Система должна давать возможность юзеру сформировать  заказ, добавить его в корзину, оплатить картой.</li>
+                 <li>Заказ можно забрать с ресторана или оформить доставкой. Юзер должен иметь возможность  просматривать статус заказа.</li>
+                 <li>Посетитель должен знать, когда будет готов заказ.</li>
+                 <li>Ресторан должен иметь страницу для размещения информации о своих товарах и контактах.</li>
+                 <li>Ресторан должен иметь страницу для размещения своих продуктов.</li>
+                 <li>Система должна предоставлять возможность владельцу ресторана видеть заказы. </li>
+                 <li>И посетитель, и ресторан должны получить уведомления о событиях, происходящих во время каждого бизнес-процесса заказа.</li>
+               </ul>
+               <p> И так у нас будет веб система для админ панели и мобильное приложения для юзера.               </p>
+               <p>Пускай набор модулей для юзера и админа будет следующий:</p>
+               <div class="table-responsive">
+                <table class="table-responsive">
+                  <table class="table table-hover">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th>Роль</th>
+                        <th>Набор модулей</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><b>Admin</b></td>
+                        <td>
+                          <ul>
+                            <li>Login</li>
+                            <li>Dashboard</li>
+                            <li>Clients</li>
+                            <li>Products</li>
+                            <li>Dishes</li>
+                            <li>Orders</li>
+                            <li>Settings
+                              <ul>
+                               <li>Profile settings</li>
+                               <li>About US</li>
+                              </ul> 
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td><b>User</b></td>
+                        <td>
+                          <ul>
+                            <li>AUTH 
+                              <ul>
+                                <li>Sign up</li>
+                                <li>Sign in</li>
+                                <li>Forgot password</li>
+                              </ul>
+                            </li>
+                            <li>Home screen
+                              <ul>
+                                <li>Screen with Dishes</li>
+                                <li>My basket, create order</li>
+                              </ul>
+                            </li>
+                            <li>Navigation 
+                              <ul>
+                                <li>Profile settings</li>
+                                <li>My orders</li>
+                                <li>Payments</li>
+                                <li>Contact US</li>
+                                <li>Logout</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </table>
+              </div>
+              <br>
+              <p><b>Вариант последовательности сбора требований (и разработки): </b> </p>
+              <ol>
+                <li class="li">Admin: Login/Logout</li>
+                <li class="li">Admin: Products page</li>
+                <li class="li">Admin: Dishes page</li>
+                <li class="li">User: AUTH/Logout</li>
+                <li class="li">Admin: Clients <i>(можно позже, зависит от приоритета клиента)</i></li>
+                <li class="li">User: Home screen > Screen with Dishes </li>
+                <li class="li">User: Home screen > My basket, create order</li>
+                <li class="li">User: Payments <i>(следует делать параллельно с оформлением и размещением заказа) </i></li>
+                <li class="li">User: My Orders</li>
+                <li class="li">Admin: Orders <i>(так как данные приходят с базы данных, а в базу попадают с User системы, модуль My basket, create order, нужно делать после связанного модуля) </i></li>
+                <li class="li">Admin/User: Notifications (letters sending for events) </li>
+                <li class="li">Admin: Dashboards <i>(так как тут отображаются данные, статистика по всем выше связанным модулям, следует делать после разработки связанных модулей)</i></li>
+                <li class="li">User: Profile settings </li>
+                <li class="li"> Admin: Settings <i>(так как в данной системе никаких настроек системы для модулей связанных нет, а только настройки профиля и информации о ресторане, приоритет модуля - после функциональных для бизнеса модулей, в ином случае - нужно делать в начале сбора требований)</i></li>
+                <li class="li"> User: Contact US</li>
+              </ol>
+            </div>
+            
+            
+            <a class="anchor" id="17"></a>
+            <div class="card-header_2">
+              3.3. Критерии качества проектных требований
+            </div>
+            
+            <div class="card-body">
+             <img src="img/tree.jpg" alt="tree" class="img-center">
+             <ul>
+               <li class="li"><b>Краткость + Полнота/завершенность.</b>Требования должны содержать всю необходимую информацию для команды разработки - все этапы реализации и понимание цели конкретного модуля, его взаимосвязь с другими модулями приложения и все нужные детали реализации (но не преизбыточные). При этом НЕ СТОИТ писать ИЗБЫТОЧНЫЕ требования, сокращайте описания требований, где это можно сделать <i>(см разделы  3.3.6   4. Модуль с таблицей и CRUD)</i></li>
+               <li class="li"><b>Понятность.</b> Понятная спецификация содержит минимально необходимый объем информации, чтобы получить четкое представление о том, как должен выглядеть и работать завершенный продукт. Таким образом, не стоит детализировать возможные способы реализации, но нужно детализировать, как именно вы поймете, что достигли нужного результата.</li>
+               <li class="li"><b>Правильная структура.</b> Важно создать правильную структуру документа соответственно структуре модулей и подмодулей проекта. Для этого используйте заголовки соответственных уровней.
+                <p>Смотрите примеры ниже.</p>
+                <p class="varning"> Плохо (<a class="link_in_text" href="https://docs.google.com/document/d/1Zah6y-RwVqgTlwuk7cfYIOqLztsazzOIywwnSfFW3os/edit#heading=h.x8vtika3bcer" target="_blank">link to example doc</a>) </p>
+                <img src="img/bad-structure.png" alt="bad-structure" class="img-center">
+                <p class="success"> Хорошо (<a class="link_in_text" href="https://docs.google.com/document/d/1mEFZXsVh6w7_M5dgTn9qfebStQuAbjsZUs7JbX_2278/edit#heading=h.i2jj3mxlwcaa" target="_blank">link to example doc</a>) </p>
+                <img src="img/good-structure.png" alt="good-structure" class="img-center">
+               </li>
+               <li class="li"><b>Осуществимость.</b>Этот критерий определяется возможностью технического осуществления требования в целом и в рамках бюджета, а так же в принципе балансом между ценностью и необходимостью для бизнеса и требуемым ресурсом.                </li>
+               <li class="li"><b>Не противоречие.</b> Конфликты в описании одного и того же функционала в разных частях требований зачастую обусловлены не внимательностью; тем, что требования пишутся поэтапно и забывается то, что было описано ранее;  требования пишутся разными людьми.</li>
+               <li class="li"><b>Недвусмысленность.</b> Частая проблема, на которую стоит обратить внимание. Точность формулировки в требованиях может по-разному интерпретироваться командой на проекте. Проблема возникает если, требования пишутся на «естественном языке», а не техническом, и разные члены команды (ПМ с клиентом и тестировщики с разработчиками)  видят разный смысл в написанном.   По этому требования для команды разработки, следует писать кратко и в техническом изъяснении, а не как для обычного пользователя системы или клиента.  </li>
+             </ul> 
+            </div>
+           
+            <a class="anchor" id="18"></a>
+            <div class="card-header_2">
+              3.4. Что входит в Проектные Требования?
+            </div>
+            <div class="card-body">
+              
+              <div>
+               <p>Подход к созданию и структура Проектных Требований в разных компаниях отличается и зависит от специфики и методологии разработки ПО, длительности проектов и типа проектов, команды разработки.</p>
+               <p>Название документа в разных компаниях тоже может быть разная: Техническое Задание (ТЗ), Спецификация (Software Requirements Specification, SRS), Terms of Reference (TOR), Требование к ПО, Проектные требования и др.. Но по сути это одно и тоже, в отдельных случаях может отличаться от полноты и детализации требований, появления дополнительных отдельных документов или их составляющих (графиков, таблиц и т. д.).</p>
+               <p>В нашей компании  Проектные требования содержат несколько главных блоков:</p>
+                <ul>
+                  <li class="li"><b>Change log table</b> - таблица версий документа (подробно в отдельном разделе)</li>
+                  <li class="li"><b>General Project Information</b> - блок с описанием бизнес идеи, целей, проектных ролей и другое  (подробно в отдельном разделе)</li>
+                  <li class="li"><b>General rules</b> - блок с описанием каких-то общих правил для проекта, например: отображение страниц в момент загрузки страницы, реакция системы на прерывание интернета, для мобильных приложений - время работы в фоновом режиме, реакция на звонки и другое (подробно в отдельном разделе)</li>
+                  <li class="li"><b>Validations rules</b> - блок с описанием общих правил валидации (подробно в отдельном разделе)</li>
+                  <li class="li"><b>Описание всех модулей системы</b> - функциональных и не функциональных требований.</li>
+                </ul>
+              </div>
+
+              <a class="anchor" id="19"></a>
+              <div class="card-header_3">
+                3.4.1 Название документа Project Requirements 
+              </div>
+              <div>
+                <p>Название должно иметь следующий формат:</p>
+                <p>{номер версии}{имя проекта} - Project Requirements</p>
+                <img src="img/doc-name.png" alt="name" class="img-center">
+              </div>
+
+              <a class="anchor" id="20"></a>
+              <div class="card-header_3">
+                3.4.2 Версионность проектных требований
+              </div>
+              <div>
+                <p>Мы работаем по гибкой методологии разработки, которая подразумевает также гибкость в сборе проектных требований - поэтапность сбора проектных требований и разработки часто приводят к необходимости внесения изменений в проектные требования; часто изменения запрашивает сам клиент.</p>
+                <p><b>Внесение изменений в проектные требования следует производить путем создания новой версии документа с внесенными изменениями.</b></p>
+                <p><u>Change log table</u> - это таблица в которой фиксируются изменения к проектной документации.</p>
+
+                <h6 class="topic">Какова цель версионности?</h6>
+                <p>Представьте, что вы завершили описание требований скажем модуля авторизации, и дали их команде тестировщиков или разработчиков. Со временем (либо в момент разработки модуля авторизации либо после окончания разработки) возникла необходимость внести какие-то изменения в требования данного модуля. Что происходит в этот момент: вся команда использовала версию, условно, 1.1 проектных требований (Aceptance Creteria, Test Cases, Use cases ссылаются на эту версию), вы внесли изменения в текущие проектные требования, не создав новый документ со следующей версией, и мы получили в итоге - команда разработала НЕ относительно требований.  По этому в данном случае важно вносить изменения в новую версию документа.</p>
+
+                <h6 class="topic">Как выглядит change log таблица?</h6>
+                <ul>
+                  <li class="li"><u>В таблице должны отображаться главные данные:
+                    <ul>
+                      <li></u><b>версия документа</b>(с добавленной ссылкой на соответственный документ версии проектной документации</li>
+                      <li><b>дата изменения</b></li></li>
+                      <li><b>описание</b>изменений (краткое описание: “добавление нового модуля”, “изменения в существующем модуле {краткий перечень изменений}”, “изменения в существующем модуле после тестирования требований”, и т.п)</li>
+                      <li><b>имя автора.</b></li>
+                    </ul>
+                  <li class="li"><u>Порядок записей определяется по дате изменения:</u><b>верху таблицы самая последняя запись,</b>так как нам больше интересны последние изменения, а не самые давние (если версий много, нам не прийдется делать лишних действий и опускаться к последней записи таблицы).</li>
+                </ul>
+                <p>Смотрите примеры ниже.</p>
+                <p class="success">Хорошо:</p>
+                <img src="img/change-log.png" alt="log-table" class="img-center_low">
+                <p class="varning">Плохо:</p>
+                <img src="img/log-table-bad.png" alt="log-table-bad" class="img-center_low">
+
+                <h6 class="topic">Версионность. Когда следует делать новую версию документа?</h6>
+                <ul>
+                  <li class="li"><b>Новую версию документа следует делать,</b>перед тем, как внести изменения в старые модули приложения с которыми работает или работала команда. В случае добавления нового модуля в проектные требования можно создавать новую версию, а можно дописать их в текущей версии (обязательно обновив change log table), все зависит от ситуации и согласовании с командой и клиентом.</li>
+                  <li class="li">Для текущей версии документа, если она находится на этапе внесения изменений, доработки,<b>следует добавлять отметку,</b>информирующую, что документация в процессе в change log table
+                    <img src="img/change-log-current.png" alt="change-log-current" class="img-center">
+                  </li>
+                  <li class="li"><b>Обязательно нужно проинформировать членов команды о новой версии проектной документации,</b>для этого следует выслать в чат проекта сообщение с этой информацией.</li>
+                  <li class="li"><b>Нумерацию следует делать в формате: 1.0, 1.1,</b>и так далее. Если добавляется новый модуль - следует менять первую цифру, если же вносятся изменения в существующий модуль - следует менять цифру после точки.</li>
+                  <li class="li">В новой версии документа <b>все изменения следует выделить</b> (например сейчас это принято делать заливкой текста, при этом следует выбирать полупрозрачные заливки синего либо зеленого оттенка). Цель -  понимание, что именно изменилось/добавилось (при этом стоит не забывать  убрать все заливки предыдущей версии!).
+                   <p>Пример:</p>
+                   <img src="img/changes-mark.png" alt="changes-mark" class="img-center">
+                   <p>Выделение НЕ следует делать:</p>
+                    <ul>
+                      <li>в случае добавления нового модуля (весь модуль есть новым)</li>
+                      <li>если изменилась только формулировка требования без изменения сути самого требования.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <a class="anchor" id="21"></a>
+              <div class="card-header_3">
+                3.4.3 General Project Information
+              </div>
+              <div>
+                <p>Этот блок должен содержать следующее данные:</p>
+                <ol>
+                  
+                  <li class="li"><b>Общее о приложении.</b>
+                    <ul>
+                      <li class="li">Веб или мобильное, будет ли оно разрабатываться в дополнении с мобильным или веб приложением, будет ли разработана админ часть под данное приложение. - Это SaaS система или нет.</li>
+                      <li class="li">Будет ли это бесплатное приложение или будут платная подписка/встроенные покупки. Важно указать данную информацию, так как от нее будет зависеть работа остальных модулей.</li>
+                      <li class="li">Указать информацию о том будет ли приложение разрабатываться полностью командой или только отдельная часть, например только фронт часть. Если приложение ongoing, нужно указать всю известную информацию о нем со ссылками и доступами.</li>
+                    </ul>
+                    <p>Если есть вопросы по требованиям, которые еще не решены клиентом (например: подписки в приложении будут, но пока клиент не знает какие и как они будут работать), следует добавить отметку об этом.</p>
+                  </li>
+
+                  <li class="li"><b>Бизнес идея, цель, юзер аудитория.</b>Этот блок должен бить кратким, но при этом давать полное понимание сферы предназначения будущего продукта, это даст возможность команде понимать приоритеты и риски приложения.</li>
+                  <li class="li"><b>Роли на проекте и их доступы.</b>Полезно описывать доступы бизнес ролей приложения в отдельной таблице, что визуально и на много проще воспринимается командой.</li>
+                  <li class="li"><b>Локализация в приложении.</b>Приложение будет разработано только на одном языке или несколько, как это должно быть реализовано.</li>
+                </ol>
+              </div>
+
+              <a class="anchor" id="22"></a>
+              <div class="card-header_3">
+                3.4.4 General rules
+              </div>
+              <div class="table-responsive">
+                <table class="table-responsive">
+                  <table class="table table-hover">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th>#</th>
+                        <th width="800">Для мобильного приложения</th>
+                        <th width="800">Для веб системы</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td >Приложение должно поддерживать только вертикальный режим или горизонтальный тоже, или частично горизонтальный (например для видео и документов)</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Сколько по времени должно приложение сохранять данные после перехода в фоновый режим?</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>После изменения тайм зоны (при перелетах в другие страны) приложение должно обновить тай зону после перезагрузки страницы или после повторного логина, юзера в систему?</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>-</td>
+                        <td> 
+                          <ol> 
+                            <li class="li"> Время активности ссылок в письмах:
+                             <ul>
+                               <li>верификации</li>
+                               <li>восстановление пароля</li>
+                               <li>другое</li>
+                             </ul>
+                            </li>
+                            <li class="li"> Реакция системы после нажатия на ссылку время “жизни” которой истекло?
+                          </ol>
+                        </td>
+                      </tr>
+                      <tr>
+
+                        <td>5</td>
+                        <td>Как должны выглядеть <b>404 и 403 страницы?</b></td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td><b>Какое время сессии должно быть для авторизированного пользователя?</b> (с выбранным чекбоксом “remember me” и без - если эта функциональность есть в проложении)</td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td><b>Какое время должны оставаться активными ссылки в рассылках писем:</b>
+                            <ul>
+                              <li>верификация почты</li> 
+                              <li>forgot password</li>
+                              <li>accept envite to the app</li> 
+                              <li>другое</li> 
+                            </ul>                    
+                        </td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Как <b>спиннер</b> должен отображаться в момент подгрузки контента??</td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Будет ли в приложении в каких-то модулях использоваться <b>обновление данных в реальном времени?</b></td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Будут ли в проложении использоваться <b>push уведомления?</b></td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Будут ли в проложении использоваться <b>push уведомления?</b></td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Как должны отображаться <b>сообщения об успехе?</b></td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>Реакция системы после <b>прерывания подключения к интернету?</b></td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>Кокой <b>формат даты</b> должен использоваться в системе?</td>
+                        <td>Тот же вопрос</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </table>
+              </div>
+
+
+              <a class="anchor" id="23"></a>
+              <div class="card-header_3">
+                3.4.5 Validation rules
+              </div>
+              <div>
+                <p>В этом блоке описываются ответы на следующие вопросы:</p>
+                <ol>
+                  <li class="li">После какого действия система должна выполнить проверку валидации:</li>
+                    <ul class="li">
+                      <li>в реальном времени</li>
+                      <li>после потери фокуса с поля (в большинстве случаев рекомендуется).</li>
+                      <li>после нажатия кнопки сохранения</li>
+                    </ul>
+                  <li class="li">Должна ли система отправлять запрос на сервер, если валидация на front-end не прошла успешно? (рекомендуется не отправлять)</li>
+                  <li class="li">Как следует отображать валидационные ошибки? (рекомендуется показывать под каждым полем, красным текстом).</li>
+                </ol>
+                <p><b>Правило валидации для отдельного поля следует писать в каждом модуле,</b>так как практика показывает, что таким образом допускается меньше ошибок и это есть более читабельным для команды.</p>
+                <p><u>Мы опишем правила описания требований по валидации для самых распространённых полей в этом модуле. Тут же рассмотрим самые частые ошибки.</u></p>
+                
+                <h6 class="topic">Правила описания валидации</h6>
+                <p>Рассмотрим правила написания валидации на формах создания/редактирование для самых распространенных полей, стандартный перечень требований и частые ошибки.</p>
+                
+                 <h6 class="topic_2">A. Price/Percentange/Ammount</h6>
+                  <ul>
+                    <li>поле обязательное или нет</li>
+                    <li>тип данных (в основном это число)</li>
+                    <li>поле принимает не целые числа или только целые</li>
+                    <li>минимальное и максимальное значение</li>
+                    <li>единица измерения</li>
+                    <li>должно ли быть установленно дефолтное значение для поля, если нет - какой placeholder должен отображаться</li>
+                  </ul>
+                  <p class="varning">Частая ошибка:</p>
+                  <p>Для поля “цена” валидацию на граничные значения указывают в длине символов, а не в численном значении. Поле не полное.</p>
+                  <img src="img/price-validation.png" alt="cprice-validation" class="img-center">
+
+                <h6 class="topic_2">B. Поля дат для периода (date from, date to)</h6>
+                <img src="img/date_from-to.png" alt="date_from-to" class="img-center">
+                <ul>
+                  <li>поля обязательные или нет, может ли быть указанно одно из них и не указано другое? </li>
+                  <li>будет ли input и date picker или только date picker</li>
+                  <li>формат даты</li>
+                  <li>следует ли отображать какие-то дефолтные значения в полях</li>
+                  <li>какой минимальный период допустимый для выбора (например:  1 неделя, либо даже 1 день, другое)</li>
+                  <li>какой максимальный  период допустимый для выбора (например: 1 год, 1 месяц, другое)</li>
+                  <li>дата начала не должна быть больше даты окончания</li>
+                </ul>
+
+                <h6 class="topic_2">C. Drop - down field</h6>
+                <ul>
+                  <li>поле обязательное или нет</li>
+                  <li>должно ли быть установленно дефолтное значение для поля, если нет - какой placeholder должен отображаться</li>
+                  <li>какие значения должны отображаться в дроп-дауне, это будет статический или динамический список. Если второе - то откуда будут приходить эти динамические данные</li>
+                  <li>single или multi select </li>
+                  <li>должен ли быть реализован поиск для списка (рекомендуется реализовывать для больших списков, <a class="link_in_text" href="https://material-ui.com/ru/components/autocomplete/" target="_blank">пример</a>)</li>
+                 </ul>
+
+                <h6 class="topic_2">D. Phone number </h6>
+                <ul>
+                  <li>поле обязательное или нет</li>
+                  <li>должно ли поле принимать номера всех мировых операторов или нет</li>
+                  <li>должна ли применяться маска и код страны с иконкой флага (рекомендуется, <a class="link_in_text" href="https://www.npmjs.com/package/vue-phone-number-input" target="_blank">пример</a>)</li>
+                </ul>
+
+                <h6 class="topic_2">E. Поле названия создаваемой сущности</h6>
+                <ul>
+                  <li>поле обязательное или нет</li>
+                  <li>поле уникальное или нет</li>
+                  <li>минимальное и максимальное количество символов в поле</li>
+                  <li>допустимые символы</li>
+                </ul>
+
+                <h6 class="topic_2">F. Кнопка добавления дополнительной формы</h6>
+                <p>(на примере формы ниже, элемент №6)</p>
+                <img src="img/button-add-form.png" alt="button-add-form" class="img-center">
+                <ul>
+                  <li>должна ли кнопка быть активна, если предыдущая форма не заполнена валидными данными</li>
+                  <li>для создания сущности (в данном примере это campaign) есть ли обязательным заполнение хотя бы 1 формы (в данном случае tier)</li>
+                  <li>какое максимальное количество дополнительных форм в целом может быть добавлено</li>
+                </ul>
+
+                <a class="anchor" id="24"></a>
+                <div class="card-header_3">
+                  3.4.6 Функциональные и нефункциональные требования каждого модуля
+                </div>
+                <p>В следующем разделе мы рассмотрим самые часто встречаемые модули приложений, что разрабатывает компания, поговорим об часто допускаемых ошибках при оформлении проектной документации, и поговорим о том, как правильно описывать проектные требования для этих модулей.</p>
+                
+                
+                <a class="anchor" id="36"></a>
+                <h6 class="topic_2">3.4.6   1. Общее</h6>
+                <p>Для каждого модуля, нужно писать общую информацию по модулю: для чего он предназначен, в каких модулях он будет использоваться, какие данные при открытии сразу будут заполнены (они будут приходить со стороннего АПИ или с предыдущего шага нашей системы или со связанного модуля), возможно, короткий сценарий пользователя по модулю и конечный результат.</p>
+                <p><u>Пример (для таблиц с данными)</u></p>
+                <p class="success">Хорошо:</p>
+                <img src="img/general-module-info.png" alt="general-info" class="img-center">
+
+                
+                <a class="anchor" id="37"></a>
+                <h6 class="topic_2">3.4.6   2. Registration</h6>
+                <p>Сейчас все чаще используется практика регистрации с использованием социальных аккаунтов: Google, FaceBook, other.</p>
+                <p><u>Следующие правила будут полезны в целом при разработке требований регистрации, включая регистрацию с социальными аккаунтами.</u></p>
+
+                <p class="topic_3">1) Верификация email address после регистрации.</p>
+                <ul class="li">
+                  <li class="li">В большинстве случаев верификацию нужно реализовывать. (для сложных CRM систем, где хранятся конфиденциальные данные бизнеса, привязаны кредитные карты юзера для оплаты подписок или услуг платформы, и тому подобное, есть возрастные ограничения, системы для водителей, платформы для медицинского бизнеса и так далее).</li>
+                  <li class="li">В очень редких случаях можно не использовать. (простые системы, игры и тому подобное)</li>
+                  <li class="li">Не нужно для социальных аккаунтов. Почему? - потому что авторизовавшись в социальном аккаунте, юзер уже подтверждает адрес почты.</li>
+                </ul>
+
+                <p class="topic_3">2) Connect accounts in Profile Settings.</p>
+                <p>Если юзер имеет несколько способов регистрации, то можно предложить клиенту функционал привязки доп аккаунтов, после авторизации в систему с выбранным социальным аккаунтом, для удобства пользования (так как практика показывает, что юзер не запоминает каким способом он регистрировался и, при дальнейшем логине в систему, могут возникнуть некоторые трудности).</p>
+                <img src="img/connect-acc.png" alt="connect-acc" class="img-center">
+
+                
+                <p class="topic_3">3) Регистрация с социальными аккаунтами. Правило №1.</p>
+                <ul>
+                  
+                  <li class="li"> <b>Если юзер пытается зарегистрироваться с использованием социального  аккаунта</b> (условно: email@test1.com) <b>при этом юзера с данным адресом электронной почты  в нашей системе еще НЕТ,</b> то распространенные варианты пользовательского сценария:
+                     <ol class="li">
+                       <li type="a" class="li">Создаем юзера в базе данных и авторизуем его в систему (важно - указать на какую именно страницу его перенаправлять, будет хорошо отправить welcome letter для юзера).</li>
+                       <li type="a" class="li">Перенаправляем юзера на 2-й шаг регистрации - заполнение профиля и задание пароля для аккаунта, для того чтобы юзер мог заходить в систему, как с помощью социального аккаунта, так и логина и пароля. Сохраняем юзера в систему после прохождения этого шага.</li>
+                     </ol>
+                  </li>
+
+                  <li class="li">Если юзер после регистрации с соц аккаунтом, воспользуется в своем Profile Page модуле, <u>заданием/изменением пароля</u> (пароль юзеру еще не задан до этого момента), то пароль запишется в базу данных и <u>юзер сможет авторизоваться как с соц аккаунтом, так и с логином и паролем.</u> При этом, важно, форма пароля не должна содержать поле ‘old password’, иначе, юзер не сможет воспользоваться этой формой.</li>
+                  
+                  <li class="li">Если юзер после регистрации с соц аккаунтом, воспользуется функционалом <u>восстановления пароля</u> (пароль юзеру еще не задан до этого момента), в модуле авторизации, то пароль запишется в базу данных и <u>юзер сможет авторизоваться как с соц аккаунтом, так и с логином и паролем.</u></li>
+                </ul>
+
+
+                <p class="topic_3">4) Регистрация с социальными аккаунтами. Правило №2.</p>
+                <ul>
+
+                  <li class="li"> <b>Если юзер пытается зарегистрироваться с использованием социального  аккаунта, при этом юзер с данным адресом электронной почты</b>  (email@test2.com) <b>в нашей системе уже ЕСТЬ</b> (этот юзер ранее зарегистрировался с использованием формы задание email и пароля), то распространённые пользовательские сценарии:
+
+                    <ol class="li">
+                      <li type="a" class="li">Если email уже верифицирован - авторизуем юзера в систему, и в базе добавляем данные о соц сети для юзера с текущим email. При этом welcome письма уже не нужно отправлять. Можно отобразить какой-то попап об успешном присоединении соц сети к аккаунту юзера (редко делают). Будет понятнее и проще, если у юзера в профиле будет функционал ‘connect accounts’ (о нем говорилось выше).</li>
+                      <li type="a" class="li">Если email не верифицирован - авторизуем юзера в систему, и в базе добавляем данные о соц сети для юзера с текущим email, при этом электронный адрес юзера остается не верифицированным и юзер не может войти в систему с электронным адресом и паролей, но может войти с помощью соц сети.</li>
+                    </ol>
+                 </li>
+
+                 <li class="li">Если юзер после регистрации с соц аккаунтом, воспользуется в своем Profile Page модуле, формой изменением пароля, то пароль запишется в базу данных и юзер сможет авторизоваться как с соц аккаунтом, так и с логином и паролем.
+                  <br><i>(Eсли юзер не был верифицирован, то верификация аккаунта произойдет и юзер сможет зайти с email and password. Почему? Потому что если наш email был использован злоумышленником при регистрации с формой email and password то юзер, что авторизированный с соц сетью изменив пароль автоматически исключает возможность авторизации злоумышленника).</i>
+                 </li>
+                 
+                 <li class="li">Если юзер после регистрации с соц аккаунтом, воспользуется функционалом <u>восстановления пароля</u> (пароль юзеру еще не задан до этого момента), в модуле авторизации, то пароль запишется в базу данных и <u>юзер сможет авторизоваться как с соц аккаунтом, так и с логином и паролем.</u></li>
+               </ul>
+
+               <p class="topic_3">5) Регистрация с социальными аккаунтами. Правило №3.</p>
+               <p><b>Если юзер пытается зарегистрироваться с помощью социального аккаунта, при этом этот email в системе уже ЕСТЬ </b> (этот юзер ранее зарегистрировался с использованием другого социального аккаунта): привязываем 2 соц аккаунта к 1 email адресу и авторизуем юзера в систему.</p>
+
+               <p class="topic_3">6) Welcome letter.</p>
+               <p>Следует отправлять всегда юзеру после регистрации (единожды для одного email адреса). 
+                При этом в требованиях следует указывать шаблон для письма и следующие данные: отправитель, тема, описание, текст письма с дизайном если нужно.</p>
+
+              <p class="topic_3">7) Упущения при описании требований, что влекут за собой ошибки в приложении.</p>
+              <ul>
+
+                <li class="li">После нажатия на ссылку в письме время которой истек, юзер должен перенаправится на страницу приложения с логотипом приложения и текстом “Your link has expired”. Эту информацию с мокапом страницы следует добавлять в требования для избежания багов. Смотрите пример ниже. 
+                  <img src="img/367.png" alt="link-expired" class="img-center"> 
+                </li>
+                <li class="li">для мобильных приложений, если при рассылке писем, в письме есть ссылка, то после клика на ссылку в письме юзер должен перенаправиться на информационную страницу с информационным текстом и лого приложения. Смотрите пример ниже. 
+                  <img src="img/for-letter.png" alt="link-expired" class="img-center">
+                </li>
+                <li class="li">Если на странице регистрации есть поля “email”, “username” которые оба  будут использоваться для логина, то они оба должны быть <b>уникальными.</b></li>
+                <li class="li">Для верификационной ссылке в письме (при наличии этого модуля), должно быть установлено время активности (например 1 сутки).</li>
+                <li class="li">При наличии верификационного модуля, после отправки формы регистрации, следует юзеру показывать попап с информацией о том, что система ждет верификации аккаунта и письмо для этого отправлено на почту.</li>
+              </ul>
+
+              <a class="anchor" id="38"></a>
+              <h6 class="topic_2">3.4.6   3. Login</h6>
+
+              <p class="topic_3">1) Валидация полей</p>
+              <p>Для авторизации, часто допускаемая ошибка - валидация для полей не будет такая же, как на регистрации, так как мы не создаем значение email и password в базу данных системы, а проверяем наличие этих значений в базе данных системы.</p>
+              <div class="subblock"> 
+                <p class="varning">Не правильно</p>
+                <p><i>Email: validation = email (must contain @, .[domain name]. Max symbols - 100. Unique. Mandatory.</i></p>
+                <p><i>Password: Mandatory, min 8 characters, max 30 characters, must contain 1 uppercase, 1 lowercase letter, and 1 number.</i></p>
+                <p class="success">Правильно</p>
+                <p><i>Email and Password:  mandatory, email = type ‘email’, should be relevant values of existed user from data base.</i></p>
+              </div>
+
+              <p class="topic_3">2) Правила для логина с социальными аккаунтами</p>
+              <p>Если в системе используются логин/регистрация с социальными аккаунтами, то:</p>
+              <ol>
+                <li type="a" class="li">если юзер уже есть в системе (зарегистрирован с этим аккаунтом) - выполняем логин</li>
+                <li type="a" class="li">если юзер уже есть в системе (зарегистрирован с другим аккаунтом либо с формой регистрации) - добавляем данные аккаунта к существующему email в базе данных и выполняем логин.</li>
+                <li type="a" class="li">если юзера НЕТ в системе - выполняем регистрации и логин.</li>
+              </ol>
+
+              <p class="topic_3"> 3) Время активности токена авторизированного пользователя</p>
+              <p>Для авторизации следует указывать время активности токена авторизированного пользователя в системе. Если используется чекбокс “remember me”, то мы указываем 2 значения (если чекбокс выбран, то время больше). </p>
+              <p>Какое время устанавливать зависит от приложения. Например, для банковских систем время должно быть очень малым, для систем не использующих важных конфиденциальных данных, время дольше, для админ панелей время, как правило, тоже короче.</p>
+
+              <a class="anchor" id="39"></a>
+              <h6 class="topic_2">3.4.6   4. Модуль с таблицей и CRUD</h6>
+              <p><u>Основные правила:</u></p>
+              <ul>
+                <li class="li">Последовательность описания: таблица, создание, редактирование</li>
+                <li class="li">Модули создания и редактирования следует разделять, а не писать вместе, поскольку они в любом случае отличаются (хотя бы по page/modal title) и первое важное требование: “на этой странице, после открытия, в полях будут отображаться релевантные значения для текущей сущности. 
+                  При этом, не стоит повторять те требования, что были написаны в модуле создания, достаточно указать что требования аналогичны.</li>
+              </ul>
+
+              <p class="topic_3">Таблица</p>
+              <ul>
+                <li class="li">Указать в каком <b>порядке</b> отображаются данные в таблице</li>
+                <li class="li">Указать для каких полей таблицы должна быть <b>сортировк</b></li>
+                <li class="li">Указать данные в таблице <b>должны обновляться</b> в реальном времени или после перезагрузки страницы. В целом это зависит от конкретного модуля. Реализация обновления данных в реальном времени требует больше времени, то этому нужно анализировать цели образно ли это делать для конкретного модуля и проекта. </li>
+                <li class="li">Указать как таблица должна отображаться <b>если много строк:</b> пагинация или “Show more” кнопка, или бесконечный скролл, или другое.</li>
+                <li class="li">Если в таблице много важных данных  предложите клиенту сделать отдельные фильтра для таблицы.</li>
+              </ul>
+
+              <p class="topic_3">Create модуль</p>
+              <ul>
+                <li class="li">На форме создания важно для полей описывать какие поля по дефолту должны быть заполнены, а какие нет. Как это определить? Исходя из теории вероятности, если вероятность выбора юзером значения Х в поле > 50% - можно заполнять его дефолтным значением.  Если поле не имеет дефолтного значения обязательно должен быть заполнитель (placeholder).</li>
+              </ul>
+
+              <p class="topic_3">Edit модуль</p>
+              <ul>
+                <li class="li">Следует продумать и указать какие из полей редактируемые, а какие нет.
+                  <p>Например</p>
+                  <ul>
+                    <li>поле email должно ли быть редактируемым или нет, если да, нужны ли рассылки каким-то юзерам (например рекрутер изменил email или phone, должны ли юзеры, кому назначено собеседование получить какое-то уведомление).</li>
+                    <li>поле начала действия акции либо скидки, которая уже активна.</li>
+                  </ul>
+                </li>
+                <li class="li">Для изменения profile photo следует указывать требование, что замена/удаления картинки происходит после сохранения всей формы, а не после действия “выбрать новое фото”/“удалить” <i>(by best practices, частая ошибка в приложениях).</i></li>
+                <li class="li">Реакция системы если скажем для юзера изменить подписку или процент от продаж для начисления ЗП <i>(в основном изменения вступают в силу с нового периода).</i></li>
+                <li class="li">Нужна ли рассылка юзеру, если скажем, изменилась дата или время интервью.</li>
+              </ul>
+
+              <a class="anchor" id="40"></a>
+              <h6 class="topic_2">3.4.6   5. Удаление сущности</h6>
+              <p>При написании требований для действия удаления, нужно тщательно продумать всю логику, и то, что повлечет за собой это действие. 
+                Стандартный набор вопросов, которые нужно решить при написании требований:</p>
+              <ul>
+                <li type="li">должно ли отображаться подтверждение действия</li>
+                <li type="li">как повлияет удаление на связанные модули (если это удаление доставщика, у которого есть активные заказы, или, если это удаление админом подписки, которая сейчас используется юзером, и т.п. Для каждого модуля будет свой индивидуальный вариант решения, стандартного тут нет) </li>
+                <li type="li">реакция системы, если в момент удаления (удаление уже произошло) юзер пытается использовать удаленную сущность (в основном, нужно отобразить попап с сообщением, что эта сущность больше не доступна)</li>
+                <li type="li">Soft или Hard удаление.</li>
+              </ul>
+
+              <a class="anchor" id="41"></a>
+              <h6 class="topic_2">3.4.6   6. Dashboard</h6>
+              <p>Рассмотрим на примере</p>
+              <img src="img/dashdoard.png" alt="dashdoard" class="img-center">
+              <ul>
+                <li>дать краткое описания модуля</li>
+                <li>указать какая статистика будет отображаться и расчеты для каждого значения </li>
+                <li>описать все элементы на странице</li>
+                <li>указать какие графики будем использовать (чаще всего используют уже готовые решения)</li>
+                <li>данные на странице следует обновлять после перезагрузки или в реальном времени</li>
+                <li>статистика верхнего блока отображается за все время? Лучше добавить дополнительные фильтра для этих значений</li>
+                <li>для блока графика, указать для каких параметров график должен отображаться и какие дефолтные значения фильтров графика</li>
+                <li>для фильтров графика указать возможные опции для фильтров </li>
+              </ul>
+
+
+              <a class="anchor" id="42"></a>
+              <h6 class="topic_2">3.4.6   7. Общее</h6>
+              
+              <p class="topic_3"> 1) Ссылки на связанные модули при описании модуля.</p>
+              <p>Нужно добавлять номер раздела в требованиях со ссылкой на этот модуль.</p>
+              <p class="varning">Плохо:</p>
+              <img src="img/link-1.png" alt="link-1" class="img-center">
+              <p class="success">Хорошо:</p>
+              <img src="img/link-2.png" alt="link-2" class="img-center">
+
+              <p class="topic_3"> 2) Реакция системы на связанные модули после определенных действий.</p>
+              <p>Например: изменения подписки админом, если она используется юзером</p>
+              <ul>
+                <li>как предупредить юзера об этих изменениях</li>
+                <li>когда следует применять изменения (в основном - со следующего периода)</li>
+                <li>проинформировать администратора, о том когда изменения вступят в силу.</li>
+              </ul>
+
+              <p class="topic_3"> 3) Описание модулей для разных юзер ролей.</p>
+              <p>Если эти роли используют 1 систему и всего лишь для некоторых ролей ограничен функционал, то следует описывать требования в одном разделе, при этом указав доступы для каждой юзер роли. </p>
+              <p>Если же для разных юзер ролей похожие модули будут на разных страницах, то и описывать в требованиях их нужно в разных разделах.</p>
+
+
+            </div>
+          </div> 
+        </div>
+          
+          
+        <div>
+          <a class="anchor" id="4"></a>
+          <div class="card">
+              <h1 class="main-title">Acceptance Criteria</h1>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="5"></a>
+          <div class="card">
+            <div class="card-header">
+              1. AC - общая информация
+            </div>
+            <div class="card-body">
+              <p><b>Критерии Приемки (Acceptance Criteria, далее АС)</b> - набор проверок, приемочных тестов, которым должны соответствовать задачи Бэклога разрабатываемого Продукта, чтобы работа по ним считалась завершенной.</p>
+              <p>Есть несколько <b>типов</b> критериев приемки. Наиболее популярны ориентированные на правила (в виде списка) и сценарии (в виде сценариев, иллюстрирующих каждый критерий). В нашей компании мы используем первое.</p>
+              <p>В каждой компании <b>подход к написанию АС</b> разный, в зависимости от методологии разработки, разрабатываемых продуктов, подходам к разработке и т.д.</p>
+              <p>В компании Join.To.IT:</p>
+              <ul>
+                <li class="li">АС пишутся для каждой отдельной задачи Бэклога.</li>
+                <li class="li">В зависимости от Бэклога, АС могут быть написаны:
+                  <ul>
+                    <li>в целом для одного модуля системы</li>
+                    <li>отдельно для back-end и front-end части.</li>
+                  </ul>
+                </li>
+                <li class="li">АС добавляют в конкретную задачу, и для каждой роли на проекте (разработчик, менеджер, тестировщик, никогда даже клиент) делается отдельный список, для того чтобы видеть результат проверки каждый отдельным членом команды.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="6"></a>
+          <div class="card">
+            <div class="card-header">
+             2. Кто пишет АС?  
+             <br>На основании чего пишутся АС?
+            </div>
+            <div class="card-body">
+              <h5 class="topic_2">Кто пишет АС?</h6>
+              <p>В целом в разных компаниях, критерии приемки пишет либо клиент, либо команда разработчиков. Как правило, критерии, написанные владельцем продукта (клиентом), проверяются членом команды разработчиков, чтобы убедиться, что критерии четко указаны и отсутствуют технические ограничения или несоответствия с точки зрения разработки. Такое решение - отличный способ, если владелец продукта имеет некоторый опыт в разработке программного обеспечения. Но все же лучше, если этой задачей занимается аналитик, менеджер проекта или специалист по обеспечению качества (QA), поскольку они знают стек технологий и реализуемость функций.</p>
+              <p><b>В нашей компании АС пишет QA отдел</b> (если QA отдел работает на проекте). Либо, если специалиста по обеспечению качества нет на проекте,  АС пишет либо менеджер проекта, либо команда разработки, либо клиент  - это согласовывается индивидуально и зависит от бюджета проекта (для некоторых проектов АС вообще не составляют и пользуются только Проектными Требованиями).</p>
+              <h5 class="topic_2">На основании чего пишутся АС?</h6>
+              <p>АС пишутся на основании проектной документации. Именно по этому дополнительного подтверждения АС клиентом не требуется, так как Проектные требования уже подтверждены клиентом.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <a class="anchor" id="7"></a>
+          <div class="card">
+            <div class="card-header">
+              3. АС и Проектные Требования
+            </div>
+            <div class="card-body">
+              <p>В нашей компании, при сборе проектных требований и написании АС,  используются следующее этапы:</p>
+              <ol>
+                <li class="li">Сбор требований и передача на тестирование (PM)</li>
+                <li class="li">Тестирование требований  (QA department)</li>
+                <li class="li">Ответы на вопросы, возникшие при тестировании требований (PM)</li>
+                <li class="li">Анализ ответов, написание raught АС  (QA department)</li>
+                <li class="li">До выяснение вопросов возникших при написании АС (QA department + PM)</li>
+                <li class="li">Финальная стадия написания АС и добавление их в нужную задачу.</li>
+                <li class="li">Обновление Проектных Требований в новой версии документации относительно всех вопросов, возникших на выше указанных этапах.                </li>
+                <li class="li">Передача задачи в разработку.</li>
+              </ol>
+              <p><b>Как видим, перед тем как отдать задачу в разработку, должны быть пройдены все выше указанные этапы. Для того чтобы справится с этой задачей, нужно заранее планировать этапы разработки и подготавливать нужные задачи для передачи их в разработку.</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="8"></a>
+          <div class="card">
+            <div class="card-header">
+              4. Критерий готовности к написанию АС
+            </div>
+            <div class="card-body">
+              <p>Перед тем как приступить к написанию АС нужно:</p>
+              <ul>
+                <li>определить на сколько детально нужно описать АС</li>
+                <li>иметь актуальные задачи Бэклога/ Спринта.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="9"></a>
+          <div class="card">
+            <div class="card-header">
+              5. Детализация АС
+            </div>
+            <div class="card-body">
+              <p>Детализация АС зависит от разных факторов:</p>
+              <ul>
+                <li>методологии разработки проекта</li>
+                <li>наличие точных требований</li>
+                <li>ресурс и время</li>
+                <li>estimate.</li>
+              </ul>
+              <p>Какие-то требования нужно более детально покрыть АС, чтобы разработчики не упустили важного правила, а где-то наоборот - меньше, чтобы не ограничивать разработчиков каким именно методом сделать ту или иную реализацию.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="10"></a>
+          <div class="card">
+            <div class="card-header">
+              6. Как написать критерии приемки
+            </div>
+            <div class="card-body">
+              <p>Вот несколько общих правил, которые помогут вам решить проблемы с формулировкой критериев приемки.</p>
+              
+              <div class="card-header_3"> Правило №1: Используйте в формулировке  «should»</div>
+               <p>Пример:</p>
+               <p class="varning"><b>Плохо:</b>  Only authorized user will have access to this page.</p>
+               <p class="success"><b>Хорошо:</b> Only authorized user should have access to this page.</p>
+
+              <div class="card-header_3"> Правило №2: Избегайте точных определений и названий элементов</div>
+              <p>Это правило применяется к большинству проектов разрабатываемых компанией. В ходе разработки, названия элементов могут измениться, по этому лучше не прописывать  точные названия элементов, чтобы в АС не оказалось, в конечном итоге, не актуальных данных.</p>
+
+              <div class="card-header_3"> Правило №3: Избегайте «нет» </div>
+              <p>«Нет» означает «ни в коем случае», и поэтому времени не хватит для проверки соблюдения такого условия. Если вы переписываете требование без использования «not», оно будет более четким и, что самое главное, поддающимся проверке.</p>
+              <p>Пример:</p>
+              <p class="varning"><b>Плохо:</b> Данные на странице не должны обновляться в реальном времени. </p>
+              <p class="success"><b>Хорошо:</b> Данные на странице должны обновляться после перезагрузки страницы. </p>
+              <p><u>Исключение:</u></p>
+              <p>В отдельных случаях можно использовать «нет» в AC, чтобы ввести например логическое возражение.</p>
+              
+              <div class="card-header_3"> Правило №4: Пишите АС последовательно</div>
+              <p>Пишите АС в правильной последовательности, аналогично этапам прохождения сценария пользователя. Это позволит сэкономить время при проверке АС и предоставит большее понимание работы модуля, нежели если АС будут в разброс.</p>
+
+              <div class="card-header_3"> Правило №5: Выделение позитивного и негативного случая в списке АС</div>
+              <p>Это поможет менеджеру или отдельному члену команды сосредоточиться на наиболее приоритетной проверкой и увидеть ее статус. </p>
+              <img src="img/ac.png" alt="ac" class="img-center">
+
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a class="anchor" id="11"></a>
+          <div class="card">
+            <div class="card-header">
+              7. Примеры АС для наиболее распространенных модулей приложений
+            </div>
+            <div class="card-body">
+              <p>Ниже предоставлены примеры АС для наиболее распространённых модулей приложений. Предоставленные АС имеют высокий уровень детализации. </p>
+              
+              <a class="anchor" id="26"></a>
+              <div class="card-header_3">1a.Login (web, front-end)</div>
+              <img src="img/AC/login-front.png" alt="loginF" class="img-center">
+
+              <a class="anchor" id="27"></a>
+              <div class="card-header_3">1.b.Login (back-end)</div>
+              <img src="img/AC/login-back.png" alt="loginB" class="img-center">
+
+
+              <a class="anchor" id="28"></a>
+              <div class="card-header_3">2.a.Forgot & Reset Password (MOBILE, front-end)</div>
+              <img src="img/AC/FORGORPASS_1.png" alt="1" class="img-center">
+              <img src="img/AC/FORGORPASS_2.png" alt="1" class="img-center">
+              <img src="img/AC/RESETPASS_3.png" alt="1" class="img-center">
+
+              <a class="anchor" id="29"></a>
+              <div class="card-header_3">2.b.Forgot & Reset Password (back-end)</div>
+              <img src="img/AC/forgotPass.back.png" alt="1" class="img-center">
+
+              <a class="anchor" id="30"></a>
+              <div class="card-header_3">3.a.Create module (web, front-end)</div>
+              <img src="img/AC/create.front.png" alt="1" class="img-center">
+              <img src="img/AC/create_2.front.png" alt="1" class="img-center">
+
+              <a class="anchor" id="31"></a>
+              <div class="card-header_3">3.b.Create module (back-end)</div>
+              <img src="img/AC/create.back.png" alt="1" class="img-center">
+              <img src="img/AC/create_2.back.png" alt="1" class="img-center">
+
+              <a class="anchor" id="32"></a>
+              <div class="card-header_3">4.a.Edit module (web, front-end)</div>
+              <img src="img/AC/edit_1.front.png" alt="1" class="img-center">
+
+              <a class="anchor" id="33"></a>
+              <div class="card-header_3">4.b.Edit module (web, back-end)</div>
+              <img src="img/AC/edit_back.png" alt="1" class="img-center">
+
+              <a class="anchor" id="34"></a>
+              <div class="card-header_3">5.a.Table with items (web, front-end)</div>
+              <img src="img/AC/table.front.png" alt="1" class="img-center">
+              <img src="img/AC/table.front_2.png" alt="1" class="img-center">
+
+              <a class="anchor" id="35"></a>
+              <div class="card-header_3">5.b.Table with items (back-end)</div>
+              <img src="img/AC/table.back1.png" alt="1" class="img-center">
+              <img src="img/AC/table.back2.png" alt="1" class="img-center">
+
+              
+            </div>
+          </div>
+        </div>
+
+          
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

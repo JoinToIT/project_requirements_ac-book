@@ -1,0 +1,26 @@
+{
+  "name": "project requirements",
+  "version": "1.0.0",
+  "description": "Manual for managers of the Join.To.IT company",
+  "main": "index.html",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoinToIt/wiki.git"
+  },
+  "keywords": [
+    "pm"
+  ],
+  "author": "Kate Boliukh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoinToIt/pmbook/issues"
+  },
+  "homepage": "https://github.com/JoinToIt/pmbook#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  }
+}
